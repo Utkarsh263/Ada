@@ -63,6 +63,16 @@
  - [x] Multistage Graph Algorithm
          - The Multistage Graph algorithm is used to find the shortest path in graphs with stages, where the vertices can be grouped into stages. It’s particularly useful in network routing, scheduling problems, and decision-making models where you need to move from one stage to the next.
        This algorithm works by dividing the graph into different stages, and finding the optimal path through these stages using dynamic programming.
+- [x] N Queens
+- [ ] Place N queens on an N x N chessboard such that:
+
+No two queens share the same row.
+
+No two queens share the same column.
+
+No two queens share the same diagonal.
+
+
        
 
  
