@@ -63,6 +63,8 @@
  - [x] Multistage Graph Algorithm
          - The Multistage Graph algorithm is used to find the shortest path in graphs with stages, where the vertices can be grouped into stages. It’s particularly useful in network routing, scheduling problems, and decision-making models where you need to move from one stage to the next.
        This algorithm works by dividing the graph into different stages, and finding the optimal path through these stages using dynamic programming.
+ - [x] Longest common subsequence
+ - [ ]  The LCS problem aims to find the longest subsequence common to two given sequences (not necessarily contiguous).Given two sequences X[0..m-1] and Y[0..n-1], find the length and the actual LCS that appears in both sequences in the same order, but not necessarily consecutively.
 - [x] N Queens
 - [ ] Place N queens on an N x N chessboard such that:
 
@@ -71,6 +73,62 @@ No two queens share the same row.
 No two queens share the same column.
 
 No two queens share the same diagonal.
+- [x] M color problem
+- [ ] he M-Coloring problem is a classic problem in graph theory where the goal is to determine if it's possible to color the vertices of a graph using at most M colors such that no two adjacent vertices share the same color.
+
+Problem Statement
+Given an undirected graph and an integer M, determine if the graph can be colored with at most M colors such that no two adjacent vertices have the same color.
+
+Approach
+This solution uses a backtracking approach:
+
+Try assigning colors to each vertex starting from vertex 0.
+
+For each vertex, try all colors from 1 to M.
+
+Before assigning a color, check if it is safe (i.e., no adjacent vertex has the same color).
+
+If safe, assign the color and recursively proceed to the next vertex.
+
+If a solution is found, return True; otherwise, backtrack.
+- [x] Hamiltonian cycle
+- [ ] A Hamiltonian Cycle in an undirected or directed graph is a cycle that visits each vertex exactly once and returns to the starting vertex.
+
+Problem Statement
+Given an undirected graph, determine whether a Hamiltonian Cycle exists. If such a cycle exists, output one possible cycle; otherwise, report that no cycle is possible.
+
+Approach
+This solution uses a backtracking algorithm:
+
+Start at an arbitrary vertex (usually vertex 0).
+
+Recursively try to add vertices to the path, ensuring that:
+
+The next vertex is adjacent to the current vertex.
+
+The vertex hasn’t been visited before.
+
+Once all vertices are included in the path, check if the last vertex connects back to the starting vertex to complete the cycle.
+
+If a valid cycle is found, return it; otherwise, backtrack and try other possibilities.
+
+- [x] Sum of subsets
+- [ ] The goal is to find all subsets of a given set of positive integers whose sum equals a specified target value.
+
+Problem Statement
+Given a set of positive integers and a target sum W, find all subsets whose elements sum to W. Each element can be used only once.
+
+Approach
+The solution uses backtracking to explore all subset combinations:
+
+Start with an empty subset and a running sum of 0.
+
+At each step, choose whether to include the current element.
+
+If the current subset’s sum equals the target, record it as a valid solution.
+
+Prune the search space if the current sum exceeds the target.
+
 
 
        
